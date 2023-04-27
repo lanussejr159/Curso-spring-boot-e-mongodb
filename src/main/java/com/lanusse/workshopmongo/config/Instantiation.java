@@ -12,8 +12,8 @@ import com.lanusse.workshopmongo.domain.Post;
 import com.lanusse.workshopmongo.domain.User;
 import com.lanusse.workshopmongo.dto.AuthorDTO;
 import com.lanusse.workshopmongo.dto.CommentDTO;
-import com.lanusse.workshopmongo.repositories.PostRepository;
-import com.lanusse.workshopmongo.repositories.UserRepository;
+import com.lanusse.workshopmongo.repository.PostRepository;
+import com.lanusse.workshopmongo.repository.UserRepository;
 
 @Configuration
 public class Instantiation implements CommandLineRunner{
@@ -40,7 +40,7 @@ public class Instantiation implements CommandLineRunner{
         userRepository.saveAll(Arrays.asList(maria, alex, bob));
 
         Post post1 = new Post(null, sdf.parse("21/03/2018"), "Partiu viagem", "Vou viajar para São Paulo. Abraços!",new AuthorDTO(maria));
-        Post post2 = new Post(null, sdf.parse("12/18/2018"), "Bom dia", "Acordei feliz",new AuthorDTO(maria));
+        Post post2 = new Post(null, sdf.parse("22/03/2018"), "Bom dia", "Acordei feliz",new AuthorDTO(maria));
 
         CommentDTO c1 = new CommentDTO("Boa viagem mano!", sdf.parse("21/03/2018"), new AuthorDTO(alex));
         CommentDTO c2 = new CommentDTO("Aproveite", sdf.parse("22/03/2018"), new AuthorDTO(alex));

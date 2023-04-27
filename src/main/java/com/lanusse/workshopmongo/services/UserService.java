@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.lanusse.workshopmongo.domain.User;
 import com.lanusse.workshopmongo.dto.UserDTO;
-import com.lanusse.workshopmongo.repositories.UserRepository;
+import com.lanusse.workshopmongo.repository.UserRepository;
 import com.lanusse.workshopmongo.services.exception.ObjectNotFoundException;
 
 @Service

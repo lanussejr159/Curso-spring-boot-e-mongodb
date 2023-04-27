@@ -1,4 +1,4 @@
-package com.lanusse.workshopmongo.repositories;
+package com.lanusse.workshopmongo.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
